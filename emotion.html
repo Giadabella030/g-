@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LunaCare - Emotion</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="mobile-preview">
+
+  <div class="phone-frame">
+    <div class="emotion-page">
+
+      <!-- 顶部栏 -->
+      <header class="top-bar">
+        <button class="back-btn"><svg><use href="#icon-back" /></svg></button>
+        <h2 data-i18n="emotionTitle">Come ti senti oggi?</h2>
+      </header>
+
+      <!-- 情绪选择 -->
+      <section class="emotion-selector">
+        <button class="emotion-btn">Felice</button>
+        <button class="emotion-btn">Stanca</button>
+        <button class="emotion-btn">Dolorante</button>
+        <button class="emotion-btn">Ansiosa</button>
+        <button class="emotion-btn">Persa</button>
+        <button class="emotion-btn">Tranquilla</button>
+      </section>
+
+      <!-- 安抚内容 -->
+      <section class="comfort-card card">
+        <p class="quote">"Anche la notte più buia finirà e il sole sorgerà."</p>
+        <button class="soft-btn small"><svg><use href="#icon-audio" /></svg> Ascolta</button>
+        <div class="canvas-placeholder">[Animazione leggera qui]</div>
+      </section>
+
+      <!-- 推荐社区帖子 -->
+      <section class="community-recommend">
+        <h3 data-i18n="relatedTopics">Post consigliati</h3>
+        <div class="card post-card" onclick="location.href='community.html#ansia'">
+          <p>#Ansia • Come vi calmate durante i giorni difficili?</p>
+        </div>
+        <div class="card post-card" onclick="location.href='community.html#dolore'">
+          <p>#Dolore • Rimedi naturali che vi aiutano?</p>
+        </div>
+      </section>
+
+      <!-- 底部导航栏 -->
+      <nav class="bottom-nav">
+        <a href="home.html" class="nav-btn"><svg><use href="#icon-home" /></svg></a>
+        <a href="map.html" class="nav-btn"><svg><use href="#icon-map" /></svg></a>
+        <a href="emotion.html" class="nav-btn active"><svg><use href="#icon-heart" /></svg></a>
+        <a href="community.html" class="nav-btn"><svg><use href="#icon-community" /></svg></a>
+        <a href="me.html" class="nav-btn"><svg><use href="#icon-me" /></svg></a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 图标追加 -->
+  <svg style="display: none;">
+    <symbol id="icon-back" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></symbol>
+    <symbol id="icon-audio" viewBox="0 0 24 24"><path d="M3 10v4h4l5 5V5l-5 5H3zm13.5 2a2.5 2.5 0 1 0 0-5v2a.5.5 0 0 1 0 1v2z"/></symbol>
+  </svg>
+
+</body>
+</html>
