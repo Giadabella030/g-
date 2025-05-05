@@ -1,0 +1,328 @@
+:root {
+  --rose-warm: #D97A6D;
+  --peach-sun: #F89B4F;
+  --gold-gentle: #ECD380;
+  --white-sand: #E8DDCF;
+  --gray-deep: #2B2B2B;
+  --background: #f5f5f5;
+}
+
+/* 模拟手机画板 */
+.mobile-preview {
+  background: #ccc;
+  padding: 20px;
+}
+.phone-frame {
+  width: 375px;
+  height: 812px;
+  background: var(--background);
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 标语 */
+.hero-banner {
+  text-align: center;
+  padding: 24px 0 8px;
+}
+.app-tagline {
+  font-family: 'Brittany Signature', cursive;
+  font-size: 28px;
+  color: var(--rose-warm);
+}
+
+/* 地图区域 */
+.map-area img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.1), -8px -8px 16px rgba(255,255,255,0.6);
+}
+
+/* 卡片推荐 */
+.card {
+  background: var(--white-sand);
+  margin: 12px 16px;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.1), -8px -8px 16px rgba(255,255,255,0.6);
+}
+
+/* 快捷按钮 */
+.quick-actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.soft-btn {
+  background: var(--background);
+  border-radius: 20px;
+  padding: 12px 16px;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.1), -8px -8px 16px rgba(255,255,255,0.6);
+  border: none;
+  font-size: 14px;
+  color: var(--gray-deep);
+}
+
+/* 悬浮扫码按钮 */
+.scan-button {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--rose-warm);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 12px rgba(217,122,109,0.4);
+  border: none;
+  color: white;
+}
+.pulse {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(217,122,109,0.4); }
+  70% { box-shadow: 0 0 0 12px rgba(217,122,109,0); }
+  100% { box-shadow: 0 0 0 0 rgba(217,122,109,0); }
+}
+
+/* 底部导航 */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--white-sand);
+  padding: 12px 0;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.05);
+}
+.nav-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--gray-deep);
+}
+.nav-btn.active svg {
+  fill: var(--rose-warm);
+}
+/* 顶部返回栏 */
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.top-bar h2 {
+  margin: 0 auto;
+  font-size: 18px;
+  color: var(--gray-deep);
+}
+.back-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+}
+
+/* 筛选栏 */
+.filter-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+.filter-tag {
+  background: var(--background);
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  color: var(--gray-deep);
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.08), -8px -8px 16px rgba(255,255,255,0.6);
+}
+.filter-tag.active {
+  background: var(--rose-warm);
+  color: white;
+}
+
+/* 卡片状态色 */
+.point-card {
+  position: relative;
+}
+.status-label {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.status-available .status-label {
+  background-color: #7ED957;
+  color: white;
+}
+.status-low .status-label {
+  background-color: #F89B4F;
+  color: white;
+}
+.status-out .status-label {
+  background-color: #D97A6D;
+  color: white;
+}
+/* 话题标签区 */
+.topic-tags {
+  display: flex;
+  overflow-x: auto;
+  padding: 12px;
+  gap: 8px;
+}
+
+/* 帖子卡片 */
+.post-card {
+  margin: 12px 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--white-sand);
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.1), -8px -8px 16px rgba(255,255,255,0.6);
+}
+.post-tag {
+  color: var(--rose-warm);
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.post-content {
+  font-size: 14px;
+  color: var(--gray-deep);
+}
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+.icon-btn {
+  background: transparent;
+  border: none;
+  padding: 4px;
+}
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--rose-warm);
+}
+/* 情绪按钮组 */
+.emotion-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 16px 12px;
+}
+.emotion-btn {
+  background: var(--white-sand);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 18px;
+  margin: 6px;
+  font-size: 14px;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.08), -8px -8px 16px rgba(255,255,255,0.6);
+  color: var(--gray-deep);
+}
+
+/* 安抚卡片 */
+.comfort-card {
+  margin: 16px;
+  padding: 20px;
+  background: var(--white-sand);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.08), -8px -8px 16px rgba(255,255,255,0.6);
+}
+.quote {
+  font-size: 16px;
+  color: var(--gray-deep);
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.soft-btn.small {
+  padding: 8px 12px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.canvas-placeholder {
+  height: 100px;
+  background: #f0f0f0;
+  border-radius: 12px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 推荐社区帖子 */
+.community-recommend h3 {
+  margin-left: 16px;
+  margin-top: 20px;
+  color: var(--gray-deep);
+}
+.community-recommend .post-card {
+  margin: 10px 16px;
+  padding: 14px;
+  border-radius: 16px;
+  background: var(--white-sand);
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.08), -8px -8px 16px rgba(255,255,255,0.6);
+  font-size: 13px;
+  color: var(--gray-deep);
+  cursor: pointer;
+}
+/* 周期图表 */
+.calendar-preview {
+  margin: 16px;
+  padding: 16px;
+}
+.cycle-chart {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+}
+
+/* 收藏语录 */
+.favorites-section {
+  margin: 16px;
+}
+.quote-card {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--white-sand);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--gray-deep);
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.08), -8px -8px 16px rgba(255,255,255,0.6);
+}
+
+/* 语言切换 */
+.language-switch {
+  margin: 16px;
+  padding: 16px;
+}
+.lang-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.lang-btn {
+  padding: 8px 14px;
+  border-radius: 16px;
+  border: none;
+  background: var(--background);
+  box-shadow: inset 4px 4px 8px rgba(0,0,0,0.05),
+              inset -4px -4px 8px rgba(255,255,255,0.6);
+  font-size: 14px;
+  color: var(--gray-deep);
+}
