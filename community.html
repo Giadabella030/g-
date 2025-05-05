@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LunaCare - Community</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="mobile-preview">
+  <div class="phone-frame">
+    <div class="community-page">
+
+      <!-- 顶部栏 -->
+      <header class="top-bar">
+        <h2 data-i18n="communityTitle">Comunità</h2>
+      </header>
+
+      <!-- 话题标签 -->
+      <section class="topic-tags">
+        <button class="filter-tag active">#Tutti</button>
+        <button class="filter-tag">#Dolore</button>
+        <button class="filter-tag">#Ansia</button>
+        <button class="filter-tag">#Ciclo</button>
+        <button class="filter-tag">#Calore</button>
+      </section>
+
+      <!-- 帖子卡片流 -->
+      <section class="post-list">
+        <div class="card post-card">
+          <p class="post-tag">#Ciclo</p>
+          <p class="post-content">"Mi sento sempre stanca il primo giorno. Qualcuna si riconosce?"</p>
+          <div class="post-meta">
+            <span>— Elisa</span>
+            <button class="icon-btn"><svg><use href="#icon-like" /></svg></button>
+          </div>
+        </div>
+
+        <div class="card post-card">
+          <p class="post-tag">#Ansia</p>
+          <p class="post-content">"Quando sono in ciclo, mi sembra che tutto sia più difficile da gestire..."</p>
+          <div class="post-meta">
+            <span>— Giulia</span>
+            <button class="icon-btn"><svg><use href="#icon-like" /></svg></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 发帖按钮 -->
+      <button class="scan-button" onclick="location.href='create-post.html'">
+        <svg><use href="#icon-plus" /></svg>
+      </button>
+
+      <!-- 底部导航栏 -->
+      <nav class="bottom-nav">
+        <a href="home.html" class="nav-btn"><svg><use href="#icon-home" /></svg></a>
+        <a href="map.html" class="nav-btn"><svg><use href="#icon-map" /></svg></a>
+        <a href="emotion.html" class="nav-btn"><svg><use href="#icon-heart" /></svg></a>
+        <a href="community.html" class="nav-btn active"><svg><use href="#icon-community" /></svg></a>
+        <a href="me.html" class="nav-btn"><svg><use href="#icon-me" /></svg></a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 图标定义 -->
+  <svg style="display: none;">
+    <symbol id="icon-like" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 
+    5.42 4.42 3 7.5 3c1.74 0 3.41 1 4.5 
+    2.09C13.09 4 14.76 3 16.5 
+    3 19.58 3 22 5.42 22 8.5c0 
+    3.78-3.4 6.86-8.55 11.54L12 
+    21.35z"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></symbol>
+  </svg>
+</body>
+</html>
