@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LunaCare - Me</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="mobile-preview">
+  <div class="phone-frame">
+    <div class="me-page">
+
+      <!-- 顶部栏 -->
+      <header class="top-bar">
+        <h2 data-i18n="meTitle">La mia Luna</h2>
+      </header>
+
+      <!-- 周期日历 -->
+      <section class="calendar-preview card">
+        <h3 data-i18n="cycle">Calendario Ciclo</h3>
+        <svg viewBox="0 0 300 100" class="cycle-chart">
+          <path d="M0,80 C50,40 100,90 150,30 S250,80 300,40" 
+                fill="none" 
+                stroke="#D97A6D" 
+                stroke-width="3"
+                stroke-dasharray="600"
+                stroke-dashoffset="600">
+            <animate attributeName="stroke-dashoffset" from="600" to="0" dur="2s" fill="freeze"/>
+          </path>
+        </svg>
+      </section>
+
+      <!-- 收藏语录 -->
+      <section class="favorites-section">
+        <h3 data-i18n="favorites">Le mie frasi</h3>
+        <div class="card quote-card">"Segui la tua luna. Non quella degli altri."</div>
+        <div class="card quote-card">"Tu sei abbastanza. Sempre."</div>
+      </section>
+
+      <!-- 语言切换 -->
+      <section class="language-switch card">
+        <h3 data-i18n="language">Lingua / Language / 语言</h3>
+        <div class="lang-options">
+          <button class="lang-btn">IT</button>
+          <button class="lang-btn">EN</button>
+          <button class="lang-btn">中</button>
+        </div>
+      </section>
+
+      <!-- 底部导航栏 -->
+      <nav class="bottom-nav">
+        <a href="home.html" class="nav-btn"><svg><use href="#icon-home" /></svg></a>
+        <a href="map.html" class="nav-btn"><svg><use href="#icon-map" /></svg></a>
+        <a href="emotion.html" class="nav-btn"><svg><use href="#icon-heart" /></svg></a>
+        <a href="community.html" class="nav-btn"><svg><use href="#icon-community" /></svg></a>
+        <a href="me.html" class="nav-btn active"><svg><use href="#icon-me" /></svg></a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>
